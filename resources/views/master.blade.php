@@ -162,6 +162,7 @@
         </style>
         <link rel='stylesheet' id='onetone-onetone-css'  href='/wp-content/themes/onetone/css/onetone.css?ver=1.8.5' type='text/css' media='' />
         <link rel='stylesheet' id='onetone-ms-css'  href='/wp-content/themes/onetone/css/onetone-ms.css?ver=1.8.5' type='text/css' media='' />
+        <link rel='stylesheet' id='onetone-scheme'  href='/wp-content/themes/onetone/css/scheme.less' type='text/less' media='' />
         <link rel='stylesheet' id='onetone-home-css'  href='/wp-content/themes/onetone/css/home.css?ver=1.8.5' type='text/css' media='' />
         <link rel='stylesheet' id='onetone-bigvideo-css'  href='/wp-content/themes/onetone/plugins/YTPlayer/css/jquery.mb.YTPlayer.min.css?ver=4.5.4' type='text/css' media='1' />
         <link rel='stylesheet' id='wpb-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Montserrat&#038;ver=4.5.4' type='text/css' media='all' />
