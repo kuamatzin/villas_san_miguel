@@ -126,7 +126,7 @@
                                                                             <div class="promo-info">
                                                                             <h4>Nunca es tarde para tener la casa de tus sueños. Conócelas. Agenda tu cita.</h4>              </div>
                                                                             <div class="promo-action">
-                                                                                <a href="#contactoo" target="_self" class="btn-normal btn-lg">Contacto</a>
+                                                                                <a onclick="jQuery(function($) {$('#contacto').animatescroll();});" target="_self" class="btn-normal btn-lg">Contacto</a>
                                                                             </div>
                                                                         </div>
                                                                     </div>

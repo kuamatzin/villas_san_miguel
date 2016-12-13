@@ -166,7 +166,7 @@
         <link rel='stylesheet' id='onetone-home-css'  href='/wp-content/themes/onetone/css/home.css?ver=1.8.5' type='text/css' media='' />
         <link rel='stylesheet' id='onetone-bigvideo-css'  href='/wp-content/themes/onetone/plugins/YTPlayer/css/jquery.mb.YTPlayer.min.css?ver=4.5.4' type='text/css' media='1' />
         <link rel='stylesheet' id='wpb-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Montserrat&#038;ver=4.5.4' type='text/css' media='all' />
-        <script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+        <script type='text/javascript' src='/wp-includes/js/jquery/jquery.js'></script>
         <script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
         <script type='text/javascript' src='/wp-content/plugins/accesspress-social-icons/js/frontend.js?ver=1.5.9'></script>
         <script type='text/javascript' src='/wp-content/plugins/accesspress-twitter-feed/js/jquery.bxslider.min.js?ver=1.4.8'></script>
@@ -232,6 +232,7 @@
         <script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.5.4'></script>
         <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.5/vue.js"></script>
         <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.0.3/vue-resource.common.js"></script>
+        <script type='text/javascript' src="https://raw.githubusercontent.com/ramswaroop/animatescroll.js/master/animatescroll.min.js"></script>
         @yield('scripts')
     </body>
 </html>
