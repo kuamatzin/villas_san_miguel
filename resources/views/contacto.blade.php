@@ -27,6 +27,20 @@
                             <small style="color:yellow" v-if="errors.phone">Este campo es obligatorio</small>
                         </div>
                     </div>
+                    <div class="phone-group col-sm-6 col-xs-12 form-group">
+                        <div class="form-group-inner{{ $errors->has('phone') ? ' has-error' : '' }}">
+                            {!! Form::label('nss', 'Número de Seguridad Social') !!}
+                            {!! Form::text('nss', null, ['class' => 'form-control', 'required' => 'required', 'v-model' => 'nss']) !!}
+                            <small style="color:yellow" v-if="errors.nss">Este campo es obligatorio</small>
+                        </div>
+                    </div>
+                    <div class="phone-group col-sm-6 col-xs-12 form-group">
+                        <div class="form-group-inner{{ $errors->has('phone') ? ' has-error' : '' }}">
+                            {!! Form::label('birthday', 'Fecha de Nacimiento') !!}
+                            {!! Form::date('birthday', null, ['class' => 'form-control', 'required' => 'required', 'v-model' => 'birthday']) !!}
+                            <small style="color:yellow" v-if="errors.birthday">Este campo es obligatorio</small>
+                        </div>
+                    </div>
                     <div class="message-group col-xs-12 form-group">
                         <div class="form-group-inner{{ $errors->has('message') ? ' has-error' : '' }}">
                             {!! Form::label('message', 'Mensajess') !!}

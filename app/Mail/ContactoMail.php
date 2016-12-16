@@ -16,6 +16,8 @@ class ContactoMail extends Mailable
     public $email;
     public $contact_message;
     public $phone;
+    public $nss;
+    public $birthday;
 
     /**
      * Create a new message instance.
@@ -28,6 +30,8 @@ class ContactoMail extends Mailable
         $this->email = $datos['email'];
         $this->contact_message = $datos['message'];
         $this->phone = $datos['phone'];
+        $this->nss= $datos['nss'];
+        $this->birthday = $datos['birthday'];
     }
 
     /**

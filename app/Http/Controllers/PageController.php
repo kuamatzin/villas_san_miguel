@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Client;
 use App\Mail\ContactoConfirmacionMail;
 use App\Mail\ContactoMail;
 use Illuminate\Http\Request;
@@ -19,14 +20,14 @@ class PageController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'name' => 'required',
-            'email' => 'required|email',
-            'message' => 'required',
             'phone' => 'required'
         ]);
 
         if ($validator->fails()) {
             return $validator->getMessageBag()->toArray();
         }
+
+        Client::create($request->all());
 
         //Send email to administrator
         Mail::to('kuamatzin@gmail.com')->send(new ContactoMail($request->all()));

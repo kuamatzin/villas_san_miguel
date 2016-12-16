@@ -10,6 +10,8 @@
     <p>Email: {{ $email }}</p>
     <p>Teléfono: {{ $phone }}</p>
     <p>Mensaje: {{ $contact_message }}</p>
+    <p>NSS: {{ $contact_message }}</p>
+    <p>Fecha de Nacimiento: {{ $birthday }}</p>
     <br>
     <p>Ponte en contacto con él</p>
 </body>
