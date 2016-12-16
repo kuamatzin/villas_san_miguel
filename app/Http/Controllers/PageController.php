@@ -18,6 +18,7 @@ class PageController extends Controller
 
     public function enviar_email(Request $request)
     {
+        dd($request->all());
         $validator = Validator::make($request->all(), [
             'name' => 'required',
             'phone' => 'required'
