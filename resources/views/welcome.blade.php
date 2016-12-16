@@ -71,7 +71,7 @@
                                 <div class="col-main">
                                     <section class="post-main" role="main" id="content">
                                         <article class="page type-page homepage" id="">
-                                            <section class="home-section-1 onetone-youtube-section video-section" v-show="video">
+                                            <section class="home-section-1 onetone-youtube-section video-section" v-if="video">
                                                 <div id="onetone-youtube-video" class="onetone-player" data-property="{videoURL:'qYrxSkgyosk',containment:'body', showControls:false, autoPlay:true, loop:true, mute:false, startAt:28, opacity:1, addRaster:true, quality:'default'}"></div>
                                                 <section id="inicio" class="home-section-1 section-banner fullheight verticalmiddle home-banner">
                                                     <div class="section-content">
@@ -94,7 +94,7 @@
                                                             </div>
                                                             <div class="clear"></div>
                                                         </div>
-                                                        </section>
+                                                </section>
                                                   <div class="clear"></div>
                                                         <script>function changeLabel(state){
                                                         if( state == 1 )
@@ -116,7 +116,41 @@
                                                         <p class="black-65" id="video-controls">
                                                             <a class="youtube-pause command" id="togglePlay" href="javascript:;" onclick="jQuery('#onetone-youtube-video').YTPTogglePlay(changeLabel)"><i class="fa fa-pause"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
                                                             <a class="youtube-volume" href="javascript:;" onclick="toggleVolume();"><i class="fa fa-volume-up "></i></a>
-                                                        </p></section><section id="section-2" class="home-section-2 ">
+                                                        </p></section>
+                                                        <section v-if="!video">
+                                                            <div id="carousel-example" class="carousel slide" data-ride="carousel">
+                                                              <ol class="carousel-indicators">
+                                                                <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                                                                <li data-target="#carousel-example" data-slide-to="1"></li>
+                                                                <li data-target="#carousel-example" data-slide-to="2"></li>
+                                                              </ol>
+
+                                                              <div class="carousel-inner">
+                                                                <div class="item active" style="max-height: 700px">
+                                                                  <a href="#"><img width="100%" src="img/s1.png" /></a>
+                                                                  <!--
+                                                                  <div class="carousel-caption">
+                                                                    <h3>Meow</h3>
+                                                                    <p>Just Kitten Around</p>
+                                                                  </div>
+                                                                  -->
+                                                                </div>
+                                                                <div class="item" style="max-height: 700px">
+                                                                  <a href="#"><img width="100%" src="img/s2.png" /></a>
+                                                                </div>
+                                                                <div class="item" style="max-height: 700px">
+                                                                  <a href="#"><img width="100%" src="img/s3.png" /></a>
+                                                              </div>
+
+                                                              <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+                                                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                                              </a>
+                                                              <a class="right carousel-control" href="#carousel-example" data-slide="next">
+                                                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                                              </a>
+                                                            </div>
+                                                        </section>
+                                                        <section id="section-2" class="home-section-2 ">
                                                         <div class="home-container container page_container">
                                                             <div style="color:;">
                                                                 
