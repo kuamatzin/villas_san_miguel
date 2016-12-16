@@ -1,6 +1,9 @@
 <script>
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        vm.video = false;
+    }
     window.Laravel = { csrfToken: '{{ csrf_token() }}' };
-    new Vue({
+    var vue = new Vue({
         el: "#contacto",
         data: {
             errors: '',
@@ -9,7 +12,8 @@
             message: '',
             phone: '',
             nss: '',
-            birthday: ''
+            birthday: '',
+            video: true 
         },
         methods: {
             contacto: function(){

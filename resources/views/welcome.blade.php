@@ -1,6 +1,6 @@
 @extends('master')
 @section('content')
-<div class="wrapper">
+<div class="wrapper" id="contacto">
     <div class="top-wrap">
         <!--Header-->
         <header class="header-wrap logo-left home-header ">
@@ -71,7 +71,7 @@
                                 <div class="col-main">
                                     <section class="post-main" role="main" id="content">
                                         <article class="page type-page homepage" id="">
-                                            <section class="home-section-1 onetone-youtube-section video-section">
+                                            <section class="home-section-1 onetone-youtube-section video-section" v-show="video">
                                                 <div id="onetone-youtube-video" class="onetone-player" data-property="{videoURL:'qYrxSkgyosk',containment:'body', showControls:false, autoPlay:true, loop:true, mute:false, startAt:28, opacity:1, addRaster:true, quality:'default'}"></div>
                                                 <section id="inicio" class="home-section-1 section-banner fullheight verticalmiddle home-banner">
                                                     <div class="section-content">
@@ -94,7 +94,8 @@
                                                             </div>
                                                             <div class="clear"></div>
                                                         </div>
-                                                        </section>  <div class="clear"></div>
+                                                        </section>
+                                                  <div class="clear"></div>
                                                         <script>function changeLabel(state){
                                                         if( state == 1 )
                                                         jQuery("#togglePlay i").removeClass("fa-play").addClass("fa-pause");
