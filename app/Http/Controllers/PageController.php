@@ -31,7 +31,7 @@ class PageController extends Controller
         Client::create($request->all());
 
         //Send email to administrator
-        Mail::to('kuamatzin@gmail.com')->send(new ContactoMail($request->all()));
+        Mail::to('contacto@inmobiliariamalintzi.com.mx')->send(new ContactoMail($request->all()));
         //Send email to contact
         Mail::to($request->email)->send(new ContactoConfirmacionMail($request->all()));
 
