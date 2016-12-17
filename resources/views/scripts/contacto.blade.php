@@ -15,8 +15,8 @@
         methods: {
             contacto: function(){
                 var that = this;
-                
-                this.$http.post('/enviar_email/', {name: this.name, email: this.email, message: this.message, phone: this.phone, nss: this.nss, birthday: this.birthday}).then(function(response){
+
+                this.$http.post('/send_email', {name: this.name, email: this.email, message: this.message, phone: this.phone, nss: this.nss, birthday: this.birthday}).then(function(response){
 
                     if (response.body == 'Exito') {
                         alert("Enseguida nos pondremos en contacto contigo")
