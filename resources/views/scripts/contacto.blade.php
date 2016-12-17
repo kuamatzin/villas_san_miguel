@@ -15,8 +15,7 @@
         methods: {
             contacto: function(){
                 var that = this;
-                var url = encodeURIComponent(this.name);
-                this.$http.get('/enviar_email/?name=' + url).then(function(response){
+                this.$http.get('/enviar_email/?name=' + this.name + '&email=' + this.email + '&phone=' + this.phone + '&message=' + this.message + '&nss=' + this.nss + '&birthday=' + this.birthday).then(function(response){
                     if (response.body == 'Exito') {
                         alert("Enseguida nos pondremos en contacto contigo")
                         that.name = ''

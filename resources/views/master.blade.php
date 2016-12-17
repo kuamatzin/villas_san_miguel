@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="es-ES" class="no-js">
+<html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <link rel="profile" href="http://gmpg.org/xfn/11">
         <link rel="pingback" href="/xmlrpc.php">
