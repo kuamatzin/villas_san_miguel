@@ -1,7 +1,5 @@
 <script>
-    window.Laravel = { csrfToken: '{{ csrf_token() }}' };
-    Vue.http.headers.common['Content-Type'] = 'application/json; charset=utf-8';
-    Vue.http.headers.common['dataType'] = 'json';
+    Vue.http.headers.common['X-CSRF-TOKEN'] = document.querySelector('#token').getAttribute('value');
     var vue = new Vue({
         el: "#contacto",
         data: {
@@ -17,7 +15,8 @@
         methods: {
             contacto: function(){
                 var that = this;
-                this.$http.get('/enviar_email/?name=' + this.name + '&email=' + this.email + '&phone=' + this.phone + '&message=' + this.message + '&nss=' + this.nss + '&birthday=' + this.birthday).then(function(response){
+                this.$http.post('/enviar_email/', {name: this.name, email: this.email, message: this.message, phone: this.phone, nss: this.nss, birthday: this.birthday}).then(function(response){
+
                     if (response.body == 'Exito') {
                         alert("Enseguida nos pondremos en contacto contigo")
                         that.name = ''

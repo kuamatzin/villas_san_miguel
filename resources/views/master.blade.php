@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
+        <meta id="token" name="token" value="{{csrf_token()}}">
         <link rel="profile" href="http://gmpg.org/xfn/11">
         <link rel="pingback" href="/xmlrpc.php">
         <!--[if lt IE 9]>
