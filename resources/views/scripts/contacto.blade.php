@@ -1,6 +1,6 @@
 <script>
     window.Laravel = { csrfToken: '{{ csrf_token() }}' };
-    Vue.http.headers.common['Content-Type'] = 'JSONP';
+    Vue.http.headers.common['Content-Type'] = 'application/json; charset=utf-8';
     var vue = new Vue({
         el: "#contacto",
         data: {
