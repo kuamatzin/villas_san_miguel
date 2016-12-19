@@ -44,7 +44,8 @@
                     </div>
                     <div class="ufbl-form-message" style="display: none;"></div>
                     <div class="col-xs-4 col-xs-offset-4 form-group">
-                        <a v-on:click="contacto" class="btn btn-block btn-primary btn-cta">Enviar</a>
+                        <a v-if="btncontacto" v-on:click="contacto" class="btn btn-block btn-primary btn-cta">Enviar</a>
+                        <img v-if="!btncontacto" src="http://egenersac.com/imagenes/loading.gif" alt="" class="img-responsive center-block" width=100px>
                     </div>
                 </form>
             </div>

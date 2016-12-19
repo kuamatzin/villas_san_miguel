@@ -10,10 +10,12 @@
             phone: '',
             nss: '',
             birthday: '',
-            video: true
+            video: true,
+            btncontacto: true
         },
         methods: {
             contacto: function(){
+                this.btncontacto = false;
                 var that = this;
 
                 this.$http.post('/send_email', {name: this.name, email: this.email, message: this.message, phone: this.phone, nss: this.nss, birthday: this.birthday}).then(function(response){
@@ -26,12 +28,15 @@
                         that.message = ''
                         that.nss = ''
                         that.birthday = ''
+                        that.btncontacto = true;
                     }
                     else {
                         that.errors = response.body;
+                        that.btncontacto = true;
+
                     }
                 }, function(error){
-
+                    that.btncontacto = true;
                 })
             }
         }
