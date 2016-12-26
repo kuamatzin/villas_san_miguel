@@ -1,7 +1,7 @@
 <script>
     Vue.http.headers.common['X-CSRF-TOKEN'] = document.querySelector('#token').getAttribute('value');
     var vue = new Vue({
-        el: "#contacto",
+        el: "#contacto-vue",
         data: {
             errors: '',
             name: '',

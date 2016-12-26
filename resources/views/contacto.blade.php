@@ -1,4 +1,4 @@
-<section  class="home-section-10 ">
+<section  class="home-section-10 " id="contacto">
     <div class="home-container container page_container">
         
         <div class="home-section-content">
