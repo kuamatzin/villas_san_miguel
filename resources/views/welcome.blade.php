@@ -201,12 +201,9 @@
                   <div style="color:;">
                   <div class="magee-animated" data-animationduration="0.9" data-animationtype="fadeInRight" data-imageanimation="no" id="">
                   <div style="color:;">
-                  <div class="magee-promo-box">
-                  <div class="promo-info">
-                  <h4>Nunca es tarde para tener la casa de tus sueños. Conócelas. Agenda tu cita.</h4>              </div>
-                  <div class="promo-action">
-                  <a onclick="jQuery(function($) {$('#contacto').animatescroll();});" target="_self" class="btn-normal btn-lg">Contacto</a>
-                  </div>
+                  <div class="">
+                  <div class="">
+                  <h4 class="text-center">Nunca es tarde para tener la casa de tus sueños. Conócelas. Agenda tu cita.</h4>              </div>
                   </div>
                   </div>
                   </div>
