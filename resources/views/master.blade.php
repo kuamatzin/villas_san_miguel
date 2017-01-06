@@ -10,6 +10,7 @@
         <script src="/wp-content/themes/onetone/js/html5.js"></script>
         <![endif]-->
         <title>Villas de San Miguel &#8211; en Santa Cruz, Tlaxcala.</title>
+        <meta name="description" content="Nunca es tarde para tener la casa de tus sueños. La mejor inversión para tu futuro y el de tu familia.">
         <script>
         var grsPluginUrl = '/wp-content/plugins/limb-gallery',
         grsShareUrl = '/wp-admin/admin-ajax.php?action=grsGalleryAjax&grsAction=share';
