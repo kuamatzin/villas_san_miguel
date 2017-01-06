@@ -391,7 +391,7 @@
                   <div class="home-container container page_container">
                   <div style="color:#ffffff;">
                   <h1 class="section-title ">Precios</h1>
-                  <div class="section-subtitle">Desde $198,00 + Subsidio Federal</div>
+                  <div class="section-subtitle" id="contacto">Desde $198,00 + Subsidio Federal</div>
                   </div>
                   </div>
                   <div class="clear"></div>
@@ -420,6 +420,16 @@
          </div>
       </div>
    </div>
+   <nav class="navbar navbar-inverse navbar-fixed-bottom">
+     <div class="container-fluid">
+       <div class="row">
+          <div class="col-md-4 col-md-offset-4">
+            <br>
+             <button onclick="jQuery(function($) {$('#contacto').animatescroll();});" target="_self" class="btn btn-danger btn-lg center-block">Contacto</button>
+          </div>
+       </div>
+     </div>
+   </nav>
    <!--Footer-->
    <footer>
       <div class="footer-widget-area">
