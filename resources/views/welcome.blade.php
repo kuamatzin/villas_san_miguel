@@ -422,7 +422,7 @@
        <div class="row">
           <div class="col-md-4 col-md-offset-4">
             <br>
-             <button onclick="jQuery(function($) {$('#contacto').animatescroll();});" target="_self" class="btn btn-danger btn-lg center-block">Contacto</button>
+             <button onclick="jQuery(function($) {$('#contacto').animatescroll();});" target="_self" class="btn btn-danger center-block">Contacto</button>
           </div>
        </div>
      </div>
